@@ -35,16 +35,17 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
-
       {!user ? (
         <Login />
       ) : (
-        <div className="app__body">
-          <Sidebar />
-          <Feed />
-          <Widgets />
-        </div>
+        <section>
+          <Header />
+          <div className="app__body">
+            <Sidebar />
+            <Feed />
+            <Widgets />
+          </div>
+        </section>
       )}
     </div>
   );
